@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 import pickle
 import pandas as pd
 
-app = Flask(__name__)
+# app = Flask(__name__)
 
 # Load the trained model
 try:
