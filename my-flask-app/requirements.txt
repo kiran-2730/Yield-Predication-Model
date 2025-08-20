@@ -1,1 +1,4 @@
-Flask==2.3.2
+flask
+pandas
+scikit-learn
+numpy

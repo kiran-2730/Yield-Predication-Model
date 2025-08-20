@@ -2,9 +2,8 @@ from flask import Flask, render_template, request
 import pickle
 import pandas as pd
 
-# app = Flask(__name__)
+app = Flask(__name__)
 
-# Load the trained model
 try:
     with open("final_trained_crop_yield_model.pkl", "rb") as f:
         model = pickle.load(f)
@@ -74,5 +73,5 @@ def predict():
 
     return render_template("predict.html", prediction=prediction)
 
-if __name__ == "__main__":
-    app.run(debug=True)
+# if __name__ == "__main__":
+#     # app.run(debug=True)
