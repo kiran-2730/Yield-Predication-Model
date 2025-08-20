@@ -1,0 +1,53 @@
+<!-- templates/about.html -->
+{% extends "base.html" %}
+
+{% block content %}
+    <section class="features" style="padding-top: 120px;">
+        <div class="container">
+            <div class="section-title">
+                <h2>About AgriPredict</h2>
+                <p>Revolutionizing agriculture through predictive analytics</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>Our Mission</h3>
+                <p>AgriPredict aims to empower Indian farmers with accurate crop yield predictions using advanced machine learning techniques. By analyzing historical data, weather patterns, and agricultural practices, we provide reliable forecasts to help farmers make informed decisions.</p>
+                
+                <h3 style="margin-top: 30px;">How We Predict</h3>
+                <p>Our system uses a sophisticated machine learning model trained on:</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>Historical crop yield data from across India</li>
+                    <li>Weather and climate patterns</li>
+                    <li>Soil quality metrics</li>
+                    <li>Agricultural input data (fertilizers, pesticides)</li>
+                    <li>Regional farming practices</li>
+                </ul>
+                
+                <h3 style="margin-top: 30px;">Key Benefits</h3>
+                <div class="features-grid" style="margin-top: 20px;">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Improved Planning</h4>
+                        <p>Better resource allocation and crop selection</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <h4>Water Optimization</h4>
+                        <p>Efficient irrigation based on predicted needs</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h4>Increased Yields</h4>
+                        <p>Data-driven decisions for better productivity</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

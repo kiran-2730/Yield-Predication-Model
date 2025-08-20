@@ -1,0 +1,89 @@
+<!-- templates/predict.html -->
+{% extends "base.html" %}
+
+{% block content %}
+    <section class="prediction-section" style="padding-top: 120px;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Predict Crop Yield</h2>
+                <p>Enter your agricultural details to get accurate yield prediction</p>
+                <p style="font-size: larger;"><b>Please enter the details in correct manner in case of text inputs e.g. Assam, Wheat, etc</b></p>
+            </div>
+            
+            <div class="prediction-container">
+                <div class="prediction-image">
+                    <img src="https://i.pinimg.com/736x/44/88/a9/4488a9e0fb73d63e5c6639a0c838d770.jpg" alt="Agriculture">
+                </div>
+                
+                <div class="prediction-form">
+                    <h3>Enter Crop Details</h3>
+                    
+                    {% if error %}
+                    <div class="error-message">
+                        <i class="fas fa-exclamation-circle"></i> {{ error }}
+                    </div>
+                    {% endif %}
+                    
+                    <form method="POST">
+                        <div class="form-group">
+                            <label for="crop">Crop:</label>
+                            <input type="text" id="crop" name="Crop" placeholder="e.g., Wheat, Rice" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="year">Crop Year:</label>
+                            <input type="number" id="year" name="Crop_Year" placeholder="e.g., 2023" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="season">Season:</label>
+                            <select id="season" name="Season" required>
+                                <option value="Kharif">Kharif</option>
+                                <option value="Rabi">Rabi</option>
+                                <option value="Whole Year">Whole Year</option>
+                                <option value="Summer">Summer</option>
+                                <option value="Winter">Winter</option>
+                                <option value="Autumn">Autumn</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="state">State:</label>
+                            <input type="text" id="state" name="State" placeholder="e.g., Punjab, Maharashtra" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="area">Area (hectares):</label>
+                            <input type="number" id="area" name="Area" step="0.01" min="0.1" placeholder="e.g., 5.5" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="rainfall">Annual Rainfall (mm):</label>
+                            <input type="number" id="rainfall" name="Annual_Rainfall" step="0.01" min="0" placeholder="e.g., 1200" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="fertilizer">Fertilizer (kg/ha):</label>
+                            <input type="number" id="fertilizer" name="Fertilizer" step="0.01" min="0" placeholder="e.g., 150" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="pesticide">Pesticide (kg/ha):</label>
+                            <input type="number" id="pesticide" name="Pesticide" step="0.01" min="0" placeholder="e.g., 5.5" required>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Predict Yield</button>
+                    </form>
+                    
+                    {% if prediction is not none %}
+                    <div class="result">
+                        <h3>🌱 Predicted Yield</h3>
+                        <div class="yield-value">{{ prediction }} tonnes/hectare</div>
+                        <p>Based on your input data and our predictive model</p>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
