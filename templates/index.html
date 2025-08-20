@@ -1,0 +1,88 @@
+<!-- templates/index.html -->
+{% extends "base.html" %}
+
+{% block content %}
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Crop Yield Predictions</h1>
+            <p>Tailored for Indian Agriculture</p>
+            <p>Harnessing Data and Machine Learning to Forecast Crop Yields Across Indian States and Districts</p>
+            <a href="/predict" class="btn btn-primary">Predict Yield Now</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Key Features</h2>
+                <p>Advanced solutions for modern agriculture</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud-sun-rain"></i>
+                    </div>
+                    <h3>Climate Analysis</h3>
+                    <p>Analyze historical weather patterns and predict future climate impact on crops.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Yield Prediction</h3>
+                    <p>Accurate predictions using state-of-the-art machine learning models.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Regional Specific</h3>
+                    <p>Tailored for Indian states and districts with local agricultural data.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section with Carousel -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-title">
+                <h2>How It Works</h2>
+                <p>Our prediction process in three simple steps</p>
+            </div>
+            
+            <div class="carousel-container">
+                <div class="carousel-slides">
+                    <!-- Step 1 -->
+                    <div class="carousel-slide">
+                        <div class="carousel-content">
+                            <div class="step-number">1</div>
+                            <h3>Data Collection</h3>
+                            <p>We gather comprehensive agricultural data including soil quality, weather patterns, historical yields, and crop information.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="carousel-slide">
+                        <div class="carousel-content">
+                            <div class="step-number">2</div>
+                            <h3>Advanced Analysis</h3>
+                            <p>Our machine learning algorithms process the data to identify patterns and correlations affecting crop yields.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="carousel-slide">
+                        <div class="carousel-content">
+                            <div class="step-number">3</div>
+                            <h3>Accurate Prediction</h3>
+                            <p>We generate precise yield forecasts tailored to your specific location, crop, and farming conditions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
