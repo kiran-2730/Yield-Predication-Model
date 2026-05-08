@@ -4,9 +4,14 @@ import pandas as pd
 
 app = Flask(__name__)
 
+<<<<<<< HEAD
 # Load the trained model
 try:
     with open("finalNew_trained_crop_yield_model.pkl", "rb") as f:
+=======
+try:
+    with open("final_trained_crop_yield_model.pkl", "rb") as f:
+>>>>>>> 544fee63d21b9b794eb27bcdaccf4d1a6678d2f5
         model = pickle.load(f)
     print("Model loaded successfully!")
 except Exception as e:
