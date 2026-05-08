@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 # Load the trained model
 try:
-    with open("final_trained_crop_yield_model.pkl", "rb") as f:
+    with open("finalNew_trained_crop_yield_model.pkl", "rb") as f:
         model = pickle.load(f)
     print("Model loaded successfully!")
 except Exception as e:
