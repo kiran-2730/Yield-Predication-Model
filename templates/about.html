@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 {% extends "base.html" %}
 
 {% block content %}
@@ -83,83 +83,26 @@
                                 color:var(--cream); line-height:1;">10k+</div>
                             <div style="font-size:0.73rem; color:var(--text-muted); letter-spacing:0.04em; margin-top:2px;">Farmers Served</div>
                         </div>
-=======
-<!-- templates/about.html -->
-{% extends "base.html" %}
-
-{% block content %}
-    <section class="features" style="padding-top: 120px;">
-        <div class="container">
-            <div class="section-title">
-                <h2>About AgriPredict</h2>
-                <p>Revolutionizing agriculture through predictive analytics</p>
-            </div>
-            
-            <div class="feature-card">
-                <h3>Our Mission</h3>
-                <p>AgriPredict aims to empower Indian farmers with accurate crop yield predictions using advanced machine learning techniques. By analyzing historical data, weather patterns, and agricultural practices, we provide reliable forecasts to help farmers make informed decisions.</p>
-                
-                <h3 style="margin-top: 30px;">How We Predict</h3>
-                <p>Our system uses a sophisticated machine learning model trained on:</p>
-                <ul style="margin-left: 20px; margin-top: 10px;">
-                    <li>Historical crop yield data from across India</li>
-                    <li>Weather and climate patterns</li>
-                    <li>Soil quality metrics</li>
-                    <li>Agricultural input data (fertilizers, pesticides)</li>
-                    <li>Regional farming practices</li>
-                </ul>
-                
-                <h3 style="margin-top: 30px;">Key Benefits</h3>
-                <div class="features-grid" style="margin-top: 20px;">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-chart-line"></i>
                         </div>
-                        <h4>Improved Planning</h4>
-                        <p>Better resource allocation and crop selection</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-tint"></i>
-                        </div>
-                        <h4>Water Optimization</h4>
-                        <p>Efficient irrigation based on predicted needs</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-seedling"></i>
-                        </div>
-                        <h4>Increased Yields</h4>
-                        <p>Data-driven decisions for better productivity</p>
->>>>>>> 544fee63d21b9b794eb27bcdaccf4d1a6678d2f5
                     </div>
                 </div>
             </div>
         </div>
-<<<<<<< HEAD
-
         <!-- How We Predict block -->
-        <div style="background: rgba(15,45,28,0.55);
-            border:1px solid rgba(61,185,111,0.13); border-radius:28px; padding:56px 60px;
-            margin-bottom:88px; backdrop-filter:blur(12px);
-            box-shadow: 0 0 60px rgba(0,0,0,0.25);
+        <div style="margin-bottom:88px;
             animation: fadeUp 0.85s cubic-bezier(0.16,1,0.3,1) forwards; animation-delay:0.45s; opacity:0;
-            position:relative; overflow:hidden;">
+            position:relative;">
 
-            <!-- Top shimmer line -->
-            <div style="position:absolute; top:0; left:0; right:0; height:1px;
-                background: linear-gradient(90deg, transparent, rgba(61,185,111,0.4), transparent);"></div>
-
-            <!-- LEFT-aligned heading -->
-            <div style="margin-bottom:44px;">
-                <div class="section-label" style="margin-bottom:14px;">The Technology</div>
+            <!-- Center-aligned heading -->
+            <div style="margin-bottom:44px; text-align:center; display:flex; flex-direction:column; align-items:center;">
+                <div class="section-label" style="margin-bottom:14px; justify-content:center;">The Technology</div>
                 <h2 style="font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight:600; margin-bottom:14px;">How We Predict</h2>
                 <p style="color:var(--text-muted); font-size:1rem; max-width:520px; line-height:1.85;">
                     Our system uses a sophisticated ML model trained extensively on:
                 </p>
             </div>
 
-            <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap:16px; max-width:860px;">
+            <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap:16px; max-width:860px; margin: 0 auto;">
                 <div style="background: rgba(255,255,255,0.04); padding:22px 26px; border-radius:16px;
                     border:1px solid rgba(61,185,111,0.1); display:flex; align-items:center; gap:14px;
                     transition: all 0.3s ease;
@@ -199,10 +142,10 @@
             </div>
         </div>
 
-        <!-- Key Benefits — LEFT aligned title -->
-        <div style="margin-bottom:48px;
+        <!-- Key Benefits — CENTER aligned title -->
+        <div style="margin-bottom:48px; text-align:center; display:flex; flex-direction:column; align-items:center;
             animation: fadeUp 0.8s cubic-bezier(0.16,1,0.3,1) forwards; animation-delay:0.55s; opacity:0;">
-            <div class="section-label" style="margin-bottom:14px;">Why AgriPredict</div>
+            <div class="section-label" style="margin-bottom:14px; justify-content:center;">Why AgriPredict</div>
             <h2 style="font-size: clamp(2rem, 3.5vw, 2.9rem); font-weight:600;">Key Benefits</h2>
         </div>
 
@@ -246,8 +189,4 @@
         .about-grid { grid-template-columns: 1fr !important; }
     }
 </style>
-
-=======
-    </section>
->>>>>>> 544fee63d21b9b794eb27bcdaccf4d1a6678d2f5
 {% endblock %}
